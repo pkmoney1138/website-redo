@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	line-height: 1;
+}
+
+.top-navigation {
+	width: 100%;
+	height: 4.375rem;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
+}
+
+.navigation-content {
+	width: 797px;
+	height: 4.375rem;
+	margin: 0 auto;
+	padding: 0 0.938rem;
+}
+
+.links {
+	float: right;
+	font-size: 1.04rem;
+	color: #838994;
+	margin-top: 1.7rem;
+	
+}
+
+li {
+	display: inline-block;
+	margin-left: 1.553rem;
+}
+
+.active {
+	color: #4c5058;
+	font-weight: 500;
+} 
+
+.logo {
+	width: 1.55rem;
+	height: 4.375rem;
+	
+}
+
+.introduction {
+	background-image: url(images/)
+}
