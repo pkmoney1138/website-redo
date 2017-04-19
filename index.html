@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Website</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
@@ -16,11 +17,23 @@
 					<li>Help</li>
 					<li>Login</li>
 				</ul>
-				<img class="logo" src="images/karma-logo copy.svg" alt="Logo Image">
+				<img class="logo" src="images/karma-logo copy.svg" alt="Logo Image" width="27">
+				<!-- eventhough the logo comes first from left to right and websites should be built left to right, it's best practice to have floating elements over non-floating elements, so the logo is underneath the floating list elements -->	
 			</div>
 		</nav>
-		<section class="introduction">
-			<div></div>
+		<section id="introduction">
+			<div id="intro-text-area">
+				<h1>Introducing Karma</h1>
+				<h3>Bring WiFi with you, everywhere you go.</h3>
+				<button id="learn-more-btn">Learn More</button>
+			
+			</div>
+		</section>
+		<section id="information-area">
+			<div id="info-icons-area">
+				<h2>Everyone needs a little Karma</h2>
+			</div>
+		
 		</section>
 	</body>
 </html>
