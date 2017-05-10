@@ -4,10 +4,10 @@ body {
 	line-height: 1;
 	background-color: lightgray;
 	font-family: "Roboto", sans-serif;
-	
 }
 
-div {
+div,
+section {
 	border: 1px solid chocolate;
 }
 
@@ -40,7 +40,7 @@ div {
 	-webkit-font-smoothing: antialiased;
 }
 
-li {
+.links li {
 	display: inline-block;
 	margin-left: 1.553rem;
 }
@@ -106,14 +106,37 @@ li:hover {
 #information-area {
 	padding-top: 1px;
 	margin-top: -1px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
-#info-icons-area {
+/* I used overflow: hidden because the floated list elements were not being contained by their parent element and ended up outside of the element. Overflow is a simple way to fix that. You can also use clearfix, which is a bit more complex, but it is a better fix. I just wanted to go simple */ 
+
+#info-content {
+	margin-top: 128px;
 	text-align: center;
-	margin-top: 20px;
+	color: #1d1e21;
 }
-#info-icons-area h2 {
+
+#info-content h2 {
 	font-size: 2.75rem;
 	margin: 1.525rem 0 3.125rem;
 	font-weight: 300;
+}
+
+#info-list {
+	list-style: none;
+	width: 770px;
+	margin: 0 auto;
+	border: 1px solid green;
+	overflow: hidden;
+}
+
+#info-list li {
+	float: left;
+	width: 33%;
+}
+
+#info-list h3 {
+	font-weight: 400;
+	font-size: 1.553rem;
+	margin: 2.5rem 0px 1.875rem;
 }
