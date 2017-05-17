@@ -6,9 +6,8 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
-div,
-section {
-	border: 1px solid chocolate;
+h4 {
+	font-weight: normal;
 }
 
 /* Navigation Bar */
@@ -107,8 +106,8 @@ li:hover {
 	padding-top: 1px;
 	margin-top: -1px;
 	background-color: #ffffff;
-}
-/* I used overflow: hidden because the floated list elements were not being contained by their parent element and ended up outside of the element. Overflow is a simple way to fix that. You can also use clearfix, which is a bit more complex, but it is a better fix. I just wanted to go simple */ 
+	padding-bottom: 5rem;
+} 
 
 #info-content {
 	margin-top: 128px;
@@ -126,9 +125,9 @@ li:hover {
 	list-style: none;
 	width: 770px;
 	margin: 0 auto;
-	border: 1px solid green;
 	overflow: hidden;
 }
+/* I used overflow: hidden because the floated list elements were not being contained by their parent element and ended up outside of the element. Overflow is a simple way to fix that. You can also use clearfix, which is a bit more complex, but it is a better fix. I just wanted to go simple */
 
 #info-list li {
 	float: left;
@@ -140,3 +139,66 @@ li:hover {
 	font-size: 1.553rem;
 	margin: 2.5rem 0px 1.875rem;
 }
+
+/* footer */
+#social {
+	padding-top: 1px;
+	margin-top: -1px;
+	background-color: #ffff;
+	padding-bottom: 9.375rem;
+}
+
+#social hr {
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 0
+}
+
+#footer-content {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #1d1e21;
+}
+
+#icons {
+	margin: 0 auto;
+	list-style: none;
+	width: 170px;
+	padding: 0;
+}
+/* I had to set padding to 0 because, for some reason, padding-left was set to 40px, but I couldn't find anywhere in my CSS where that was declared. */
+
+#icons li {
+	border: 1px solid #eaebec;
+	width: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+/* When it came to centering the icon images in their borders, width, height, and padding together would result in a off-center icon, so I used a bit of padding and width alone and that seemed to do the trick. */
+
+#twitter {
+	color: #55ACEE;
+}
+
+#facebook {
+	color: #6377AA;
+}
+
+#instagram {
+	color: #3F729B; 
+}
+
+#copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+/* Using span caused a problem when I tried moving it down with "margin-top". It wouldn't move! Turns out span is an inline element and those don't accept top and bottom movement (Only left and right). I declared it an inline-block instead and thus was able to move it. */
+
