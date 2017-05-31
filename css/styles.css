@@ -9,6 +9,7 @@ body {
 h4 {
 	font-weight: normal;
 }
+/* I had to declare h4 as normal; otherwise, it would always come out bold later on and changing font-weight later wouldn't change that either, for some reason. Changing it up here to affect the whole page seemed to fix that problem. */  
 
 /* Navigation Bar */
 .top-navigation {
@@ -63,7 +64,7 @@ li:hover {
 	height: 45.938em;
 	padding-top: 1px;
 	margin-top: -1px;
-	/* the padding and margin-top 1 and -1 is here because the intro-text-area and this introduction area were collapsing into one and when I tried to move the text-area, this intro area was moving with it. The 1 and -1 is one way of fixing this problem. Thinkful suggests using overflow: auto on the parent element, in this case that's introduction where this is being typed. */
+	/* the padding and margin-top 1 and -1 is here because the intro-text-area and this introduction area were collapsing into one and when I tried to move the text-area, this intro area was moving with it. The 1 and -1 is one way of fixing this problem. Thinkful suggests using overflow: auto on the parent element, in this case that's the introduction where this is being typed. */
 }
 
 #intro-text-area {
@@ -180,15 +181,15 @@ li:hover {
 
 /* When it came to centering the icon images in their borders, width, height, and padding together would result in a off-center icon, so I used a bit of padding and width alone and that seemed to do the trick. */
 
-#twitter {
+.twitter {
 	color: #55ACEE;
 }
 
-#facebook {
+.facebook {
 	color: #6377AA;
 }
 
-#instagram {
+.instagram {
 	color: #3F729B; 
 }
 
@@ -201,4 +202,18 @@ li:hover {
 }
 
 /* Using span caused a problem when I tried moving it down with "margin-top". It wouldn't move! Turns out span is an inline element and those don't accept top and bottom movement (Only left and right). I declared it an inline-block instead and thus was able to move it. */
+
+
+#font-awesome-stack span {
+	margin-top: 15px;
+	margin-right: 8px;
+}
+
+.fa-circle {
+	border: .5px solid lightgray;
+	border-radius: 50%;
+}
+
+/* I had to style the border myself. There was a border initially with premade font-awesome icon I used, but it had a solid color inside the icon, so I switched it to the "fa-inverse" class, but that got rid of the border. I targeted the icon with the ".fa-circle" class and specified the border and the border-radius. That seemed to work.   
+
 

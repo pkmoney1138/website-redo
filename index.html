@@ -6,6 +6,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="icon" type="image/png" href="favicon.ico">
 	</head>
 	<body>
 		<nav class="top-navigation">
@@ -53,11 +54,29 @@
 				<hr>
 				<h4>Join us on</h4>
 				<ul id="icons">
-					<li id="twitter"><i class="fa fa-twitter"></i></li>	
-					<li id="facebook"><i class="fa fa-facebook"></i></li>
-					<li id="instagram"><i class="fa fa-instagram"></i></li>
+					<li class="twitter"><i class="fa fa-twitter"></i></li>	
+					<li class="facebook"><i class="fa fa-facebook"></i></li>
+					<li class="instagram"><i class="fa fa-instagram"></i></li>
 				</ul>
 				<span id="copy">&copy; Karma Mobility, Inc.</span>
+				<br>
+				<div id="font-awesome-stack">
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+						<i class="fa fa-twitter fa-stack-1x twitter"></i>
+					</span>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+						<i class="fa fa-facebook fa-stack-1x facebook"></i>	
+					</span>		
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+						<i class="fa fa-instagram fa-stack-1x instagram"></i>
+					</span>
+					<br>
+					<span id="copy">&copy; Karma Mobility, Inc.</span>
+				</div>
+				<!-- I did the icon area twice. The first time, manually with a <ul> and all the styling manual also. The second version, with class "font-awesome-stack." I used pre-made code from font-awesome. -->
 			</div>
 		</footer>
 	</body>
